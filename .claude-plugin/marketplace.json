@@ -1,0 +1,29 @@
+{
+  "name": "synch",
+  "description": "Marketplace for Synch — Claude ↔ Codex automatic collaboration.",
+  "version": "1.0.0",
+  "owner": {
+    "name": "Mohamed Shahin",
+    "url": "https://github.com/shahin84"
+  },
+  "plugins": [
+    {
+      "name": "synch",
+      "source": "./",
+      "description": "Automatic back-and-forth collaboration loop between Claude Code and the OpenAI Codex CLI — debate, review, delegate, or chat, with checkpoints and a saved transcript.",
+      "version": "1.0.0",
+      "homepage": "https://github.com/shahin84/synch",
+      "repository": "https://github.com/shahin84/synch",
+      "keywords": [
+        "codex",
+        "collaboration",
+        "debate",
+        "code-review",
+        "pair-programming",
+        "openai",
+        "multi-agent"
+      ],
+      "category": "productivity"
+    }
+  ]
+}

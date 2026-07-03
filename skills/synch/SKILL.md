@@ -20,8 +20,14 @@ Trigger: `/synch <mode> "<task>"` — modes: `debate` | `review` | `delegate` | 
 
 - Confirm Codex exists: run `codex --version`. If missing → stop and tell the user to
   install it (`npm install -g @openai/codex` + `codex login`).
-- The bridge is at `<this skill dir>/scripts/codex-bridge.sh`. Set
-  `BRIDGE="$HOME/.claude/skills/synch/scripts/codex-bridge.sh"` and use it in every call.
+- The bridge script lives at `scripts/codex-bridge.sh` inside **this skill's own directory**.
+  Resolve its absolute path from the skill's base directory — the "Base directory for this skill"
+  that is announced when this skill is invoked — and set `BRIDGE="<that base directory>/scripts/codex-bridge.sh"`.
+  Use `BRIDGE` in every call.
+  - Manual install (`~/.claude/skills/synch/`) → `BRIDGE="$HOME/.claude/skills/synch/scripts/codex-bridge.sh"`.
+  - Plugin install → `BRIDGE="${CLAUDE_PLUGIN_ROOT}/skills/synch/scripts/codex-bridge.sh"`.
+  Do NOT hardcode a single path blindly: confirm it exists with `ls -l "$BRIDGE"` before the loop;
+  if it's missing, stop and tell the user the skill isn't installed correctly.
 
 ## 1. Resolve mode + task
 

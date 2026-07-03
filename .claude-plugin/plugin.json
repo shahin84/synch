@@ -1,0 +1,20 @@
+{
+  "name": "synch",
+  "version": "1.0.0",
+  "description": "Automatic back-and-forth collaboration loop between Claude Code and the OpenAI Codex CLI — debate, review, delegate, or chat, with checkpoints and a saved transcript.",
+  "author": {
+    "name": "Mohamed Shahin",
+    "url": "https://github.com/shahin84"
+  },
+  "homepage": "https://github.com/shahin84/synch",
+  "repository": "https://github.com/shahin84/synch",
+  "keywords": [
+    "codex",
+    "collaboration",
+    "debate",
+    "code-review",
+    "pair-programming",
+    "openai",
+    "multi-agent"
+  ]
+}
