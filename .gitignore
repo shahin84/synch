@@ -1,0 +1,5 @@
+# Synch run artifacts (transcripts, session ids, per-turn scratch)
+.synch/
+
+# macOS
+.DS_Store
